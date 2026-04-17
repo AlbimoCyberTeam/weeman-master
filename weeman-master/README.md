@@ -8,12 +8,16 @@ Version 1.7.1 is the last and latest version for weeman.
 # Requirements
 
 * Python 2.7
-
-# Platforms
-
-* Linux
-* Mac
-
-# Copying
-
-See 'LICENSE' and lib/bs4/COPYING.txt
+pkg update && pkg upgrade
+pkg install python2
+pip2 install beutifulsoup
+pkg install git
+git clone https://github.com/evait-security/weeman
+cd weeman
+python2 weeman.py
+set url https://facebook.com/login.php
+set port 8080
+set action_url https:facebook.com
+run
+http://localhost:8080
+Done..!!!
